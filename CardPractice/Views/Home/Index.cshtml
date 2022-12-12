@@ -1,0 +1,11 @@
+﻿@model Cards
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Deck of Cards</h1>
+    <a href="https://www.deckofcardsapi.com/api/deck/new/draw/?count=2">Shuffle Deck</a>
+    @Model.value of @Model.suit
+    <img src="@Model.image" />
+</div>
